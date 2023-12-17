@@ -1,0 +1,596 @@
+@import "./color";
+
+.header {
+    background-color: $BlueViolet;
+    width: 100%;
+    height: 85px;
+    color: $Azure;
+
+    &-logo {
+        width: 130px;
+        padding-top: 30px;
+
+        &_slack {
+            height: 85px;
+        }
+    }
+
+    &-inicio {
+        margin: 0;
+        width: 500px;
+        text-align: center;
+        display: flex;
+        float: left;
+        justify-content: space-between;
+
+        &-select {
+            color: $Azure;
+            background-color: $BlueViolet;
+            width: 100px;
+            font-size: 14px;
+        }
+
+        &-select:hover {
+            cursor: pointer;
+        }
+
+        &__pag {
+            color: $Azure;
+            font-size: 18px;
+            margin: 10 12px 10 12px;
+        }
+
+        &__pag:hover {
+            text-decoration: overline;
+        }
+    }
+
+    &-help {
+        text-align: center;
+        align-items: center;
+        float: right;
+        display: flex;
+        width: 465px;
+        justify-content: space-evenly;
+
+        &__1 {
+            color: $MidnightBlue;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        &__2 {
+            color: $MidnightBlue;
+            width: 200px;
+            padding: 10px;
+            border: solid $MidnightBlue;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        &__3 {
+            color: $MidnightBlue;
+            width: 200px;
+            padding: 10px;
+            border: solid $MidnightBlue;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    background-color: $BlueViolet;
+    height: 1000px;
+
+    &-parte1 {
+        width: 100%;
+        height: 600px;
+        background-color: $BlueViolet;
+
+        &-izq {
+            width: 30%;
+            float: left;
+            padding: 50px;
+            background-color: $BlueViolet;
+            color: $Azure;
+
+            &__button {
+                border-radius: 4px;
+                margin: 10px;
+                width: 300px;
+                border: none;
+            }
+
+            &__button:hover {
+                cursor: pointer;
+            }
+
+            &__button2 {
+                border-radius: 4px;
+                margin: 10px;
+                width: 300px;
+                border: none;
+            }
+
+            &__button2:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-der {
+            float: right;
+            height: 300px;
+            margin-top: 50px;
+
+            &__img {
+                height: 420px;
+            }
+        }
+    }
+
+
+    &-div2 {
+        width: 1300px;
+        height: 90px;
+        margin: 0;
+        text-align: center;
+        background-color: $DarkGray;
+
+        &__img {
+            height: 93px;
+            width: 110px;
+            padding: 40px;
+        }
+    }
+
+    &-section {
+        width: 100%;
+        height: 1500px;
+        background-color: $DarkGray;
+
+        &-article {
+            width: 100%;
+            height: 400px;
+
+            &__img {
+                width: 39%;
+                float: left;
+                height: 80%;
+                padding: 52px 70px 35px 65px;
+                border-radius: 0 50% 50% 0;
+            }
+
+
+            &-title {
+                width: 40%;
+                height: 60%;
+                float: right;
+                text-align: center;
+                padding: 50px 50px;
+                margin: 50px auto;
+
+                &__h1 {
+                    font-size: 35px;
+                }
+
+                &__p {
+                    font-size: large;
+                }
+
+                &--active {
+                    float: left;
+                }
+
+                &__link {
+                    text-decoration: none;
+                }
+
+                &__link:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &-cuerpo {
+        background-color: $Azure;
+        width: 1200px;
+        margin: 0 auto;
+        height: 400px;
+        display: flex;
+
+        &-izq {
+            width: 200px;
+            height: 400px;
+            float: left;
+            display: flex;
+            flex-direction: column;
+
+            &__gra1 {
+                height: 25px;
+                width: 25px;
+                margin: 50px 0 20px 100px;
+            }
+
+            &__gra2 {
+                height: 25px;
+                width: 25px;
+                margin: 40px 0;
+            }
+
+            &__gra3 {
+                height: 25px;
+                width: 25px;
+                margin: 20px 0 0 100px;
+            }
+        }
+
+        &-der {
+            width: 200px;
+            height: 400px;
+            float: right;
+            display: flex;
+            flex-direction: column;
+
+            &__emo1 {
+                height: 25px;
+                width: 25px;
+                margin: 30px 0;
+            }
+
+            &__emo2 {
+                height: 25px;
+                width: 25px;
+                margin: 40px 0 20px 100px;
+            }
+
+            &__emo3 {
+                height: 25px;
+                width: 25px;
+                margin: 40px 0;
+            }
+        }
+
+        &-slack {
+            width: 600px;
+            height: 300px;
+            padding: 50px;
+            text-align: center;
+
+            &__h1 {
+                font-size: 50px;
+                text-align: center;
+            }
+
+            &__p {
+                font-size: larger;
+            }
+
+            &-boton {
+                width: 700px;
+                height: 100px;
+                padding-top: 40px;
+                margin-left: -50px;
+
+                &__b1 {
+                    color: $Azure;
+                    background-color: $BlueViolet;
+                    border-radius: 5%;
+                    height: 30px;
+                    width: 200px;
+                    padding: 15px 40px 15px 40px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+
+                &__b2 {
+                    background-color: $Azure;
+                    color: $BlueViolet;
+                    border: $BlueViolet solid 2px;
+                    border-radius: 5%;
+                    height: 100px;
+                    width: 200px;
+                    padding: 15px 40px 15px 40px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &-numeros {
+        width: 800px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto 150px auto;
+
+        &-porcentaje {
+            width: 250px;
+            height: 100px;
+
+            &__h1 {
+                font-size: 60px;
+                ;
+                color: $BlueViolet;
+            }
+
+            &__p {
+                margin-top: -50px;
+                width: 200px;
+                font-size: medium;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    &-vodafone {
+        width: 1200px;
+        height: 600px;
+        display: inline;
+
+        &__img {
+            width: 600px;
+            height: 400px;
+            float: left;
+            border-radius: 0 45% 45% 0;
+        }
+
+        &-div {
+            display: flex;
+            flex-direction: column;
+            float: right;
+            width: 650px;
+            height: 200px;
+
+            &__p1 {
+                font-size: 25px;
+                font-style: italic;
+                font-weight: lighter;
+                margin-right: 150px;
+            }
+
+            &__h4 {
+                font-size: 20px;
+                margin-bottom: -20px;
+            }
+
+            &__p2 {
+                font-size: 20px;
+                font-weight: lighter;
+            }
+
+            &__link {
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            &__link:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-promedio {
+        width: 100%;
+        height: 50px;
+        margin: 580px auto 0 auto;
+
+        &__p {
+            font-size: 15px;
+            color: grey;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__explora {
+        font-size: 30px;
+        background-color: $DarkGray;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &-cuadros {
+        align-items: center;
+        background-color: $DarkGray;
+        width: 100%px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+
+        :hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        &-div {
+            background-color: $Azure;
+            width: 200px;
+            height: 250px;
+            margin: 0px 10px 20px 160px;
+            padding: 10px 5px 60px 5px;
+            text-align: center;
+
+            &__card {
+                width: 180px;
+                height: 150px;
+
+            }
+
+            &__func {
+                font-size: 10px;
+                font-weight: lighter;
+                color: grey;
+                text-align: left;
+                padding-left: 10px;
+            }
+
+            &__title {
+                font-size: 15px;
+            }
+
+            &__link {
+                text-decoration: none;
+            }
+
+            &__link:hover {
+                text-decoration: underline;
+
+            }
+        }
+    }
+
+    &-descubre {
+        background-color: $BlueViolet;
+        width: 100%;
+        height: 300px;
+        border-radius: 0 0 40% 40%;
+        margin: -30px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &__h1 {
+            font-size: 30px;
+            color: $Azure;
+            width: 900px;
+            height: 50px;
+            text-align: center;
+        }
+
+        &-boton {
+            width: 800px;
+            height: 100px;
+            margin: 40px 40px;
+
+            &__b1 {
+                border-radius: 5%;
+                background-color: $Azure;
+                color: $BlueViolet;
+                height: 50px;
+                width: 200px;
+                padding: 25px 40px;
+                margin: 0 10px;
+                text-decoration: none;
+
+            }
+
+            &__b1:hover {
+                box-shadow: inset 2px 2px 0 0 $BlueViolet;
+            }
+
+            &__b2 {
+                border-radius: 5%;
+                color: $Azure;
+                background-color: $BlueViolet;
+                height: 50px;
+                width: 300px;
+                padding: 25px 40px;
+                border: solid $Azure 1px;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+
+            &__b2:hover {
+                box-shadow: inset 2px 2px 0 0 $Azure;
+
+            }
+        }
+    }
+
+    &-datos {
+        background-color: $Azure;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+
+        &__logo {
+            float: left;
+            height: 100px;
+            width: 80px;
+        }
+
+        &-lista {
+            list-style: none;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 380px;
+            gap: 20px;
+
+            &__title {
+                margin-bottom: 20px;
+            }
+
+            &__link {
+                text-decoration: none;
+                color: black;
+                font-weight: lighter;
+                margin-top: 20px;
+            }
+
+            &__link:hover {
+                color: $MidnightBlue;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    border-top: solid $DarkGray 1px;
+    margin-top: 2900px;
+
+    &-asideizq {
+        width: 1100px;
+        float: left;
+        height: 75px;
+
+        &-lista {
+            padding: 1100px 75px;
+            display: flex;
+            list-style: none;
+
+            &__link {
+                margin-right: 20px;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+
+            &__link:hover {
+                color: $MidnightBlue;
+            }
+
+            &-select {
+                font-weight: bold;
+
+                &__title {
+                    font-weight: bold;
+                }
+
+                &__option:hover {
+                    text-decoration: underline;
+                    color: $MidnightBlue;
+                }
+
+                &-select:hover {
+                    color: $MidnightBlue;
+
+                }
+            }
+        }
+    }
+}
